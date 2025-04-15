@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function DetailSection() {
 	return (
 		<>
-			<div className="w-full px-8 py-2">
+			<div className="w-full px-8 py-6">
 				<h1 className="text-2xl font-bold text-main pb-4">Kenali Kebersamaan Kami</h1>
 				<h3 className="pb-4 font-bold text-xl">NMA Medica Herbal</h3>
 				<p className="text-justify text-sm pb-4">
