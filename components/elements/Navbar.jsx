@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
-import Image from 'next/image';
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -37,16 +36,10 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={navbarRef}
-			className="fixed bg-opacity-100 z-10 text-white w-full flex justify-between items-center py-2 lg:px-6 px-4 drop-shadow-md">
+			className="fixed w-full flex justify-between items-center py-2 lg:px-6 px-4 bg-[#1f1f1f]/70 backdrop-blur-lg border border-[#1f1f1f]/40 z-10 text-white drop-shadow-lg">
 			<Link href="/">
 				<div className={`${menuOpen ? 'hidden' : ''} flex items-center`}>
-					{/* <Image
-						width={77}
-						height={53}
-						src="/logo.png"
-						alt="Logo"
-					/> */}
-					<span className="">
+					<span>
 						<p className="font-bold text-sm">Nusantara Medica Group</p>
 					</span>
 				</div>
@@ -56,14 +49,14 @@ const Navbar = () => {
 				onClick={() => setMenuOpen(!menuOpen)}>
 				<button aria-label="Toggle Menu">
 					<div className="space-y-1">
-						<span className="block w-6 h-0.5 bg-white"></span>
-						<span className="block w-6 h-0.5 bg-white"></span>
-						<span className="block w-6 h-0.5 bg-white"></span>
+						<span className="block w-6 h-0.5 bg-white mix-blend-difference"></span>
+						<span className="block w-6 h-0.5 bg-white mix-blend-difference"></span>
+						<span className="block w-6 h-0.5 bg-white mix-blend-difference"></span>
 					</div>
 				</button>
 			</div>
 			<div className={`lg:flex items-center ${menuOpen ? 'block' : 'hidden'} w-full lg:w-auto`}>
-				<ul className="flex text-black text-sm flex-col lg:flex-row justify-center items-center bg-[#fefefe] lg:bg-transparent">
+				<ul className="flex text-black mix-blend-difference text-sm flex-col lg:flex-row justify-center items-center bg-[#fefefe] lg:bg-transparent">
 					<li>
 						<Link href="/produk">
 							<span className="hover_button">Produk</span>

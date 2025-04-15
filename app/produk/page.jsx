@@ -1,7 +1,19 @@
+import HeroSection from '@/components/elements/produk/hero-section';
+import ProdukCard from '@/components/elements/produk/produk-card';
+import Image from 'next/image';
+
 export default function Produk() {
 	return (
-		<div className="py-8 bg-main flex justify-center items-center w-full h-screen">
-			<h1>Halaman Produk</h1>
-		</div>
+		<>
+			<HeroSection />
+			<ProdukCard />
+			<Image
+				className="w-full -mb-0.5"
+				src="/image/rumput.png"
+				width={200}
+				height={100}
+				alt="rumput"
+			/>
+		</>
 	);
 }
