@@ -40,7 +40,7 @@ const Navbar = () => {
 			<Link href="/">
 				<div className={`${menuOpen ? 'hidden' : ''} flex items-center`}>
 					<span>
-						<p className="font-bold text-sm">Nusantara Medica Group</p>
+						<p className="font-bold text-sm">Nusantara Medika Group</p>
 					</span>
 				</div>
 			</Link>

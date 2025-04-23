@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata = {
-	title: 'Nusantara Medica Group',
+	title: 'Nusantara Medika Group',
 	description: 'Solusi Herbal Terpercaya Untuk Menjaga Keseimbangan Tubuh Tetap Terjaga',
 };
 

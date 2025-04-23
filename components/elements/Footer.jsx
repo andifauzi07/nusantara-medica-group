@@ -22,7 +22,7 @@ export default function Footer() {
 
 	return (
 		<div className="bg-black px-8 py-8 text-white flex flex-col gap-6">
-			<p className="font-bold text-2xl">NMA Medica Herbal</p>
+			<p className="font-bold text-2xl">NMA Medika Herbal</p>
 			<div className="flex gap-4">
 				{icons.map((icon) => (
 					<Link
@@ -86,10 +86,10 @@ export default function Footer() {
 						alt="Home Icon"
 						className="w-auto h-auto"
 					/>
-					<p className="text-xs">nmamedica@gmail.com</p>
+					<p className="text-xs">nmamedika@gmail.com</p>
 				</span>
 			</div>
-			<p className="text-xs text-center font-light mt-4">NMA Medica 2024 All Rights Reserved</p>
+			<p className="text-xs text-center font-light mt-4">NMA Medika 2024 All Rights Reserved</p>
 		</div>
 	);
 }

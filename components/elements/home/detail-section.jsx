@@ -6,13 +6,13 @@ export default function DetailSection() {
 		<>
 			<div className="w-full px-8 py-6">
 				<h1 className="text-2xl font-bold text-main pb-4">Kenali Kebersamaan Kami</h1>
-				<h3 className="pb-4 font-bold text-xl">NMA Medica Herbal</h3>
+				<h3 className="pb-4 font-bold text-xl">NMA Medika Herbal</h3>
 				<p className="text-justify text-sm pb-4">
 					adalah brand kesehatan berbasis herbal yang berkomitmen menghadirkan produk alami berkualitas tinggi. Dengan memadukan kearifan tradisional dan inovasi modern, kami meracik berbagai solusi herbal yang aman, efektif, dan tanpa efek
 					samping.
 				</p>
 				<p className="text-justify text-sm pb-4">
-					Kami percaya bahwa kesehatan terbaik berasal dari alam. Oleh karena itu, setiap produk NMA Medica Herbal dibuat dari bahan-bahan alami pilihan yang telah teruji manfaatnya, membantu Anda menjalani hidup yang lebih sehat dan
+					Kami percaya bahwa kesehatan terbaik berasal dari alam. Oleh karena itu, setiap produk NMA Medika Herbal dibuat dari bahan-bahan alami pilihan yang telah teruji manfaatnya, membantu Anda menjalani hidup yang lebih sehat dan
 					seimbang secara alami.
 				</p>
 				<Button
@@ -23,7 +23,7 @@ export default function DetailSection() {
 				</Button>
 				<div className="h-[0.5px] my-4 w-full bg-black" />
 				<div>
-					<h1 className="text-2xl text text-center font-bold text-main pb-4">Kenapa Harus Memilih NMA Medica</h1>
+					<h1 className="text-2xl text text-center font-bold text-main pb-4">Kenapa Harus Memilih NMA Medika</h1>
 					<p className="text-center text-base text-main font-semibold">Produk berkualitas</p>
 					<div className="w-full flex justify-center my-4">
 						<Image
