@@ -1,7 +1,15 @@
+import DetailSection from '@/components/elements/tentang-kami/detail-section';
+import HeroSection from '@/components/elements/tentang-kami/hero-section';
+import Sertifikat from '@/components/elements/tentang-kami/sertifikat';
+import VisiMisi from '@/components/elements/tentang-kami/visi-misi';
+
 export default function TentangKami() {
 	return (
-		<div className="py-8 bg-main flex justify-center items-center w-full h-screen">
-			<h1>Halaman Tentang Kami</h1>
-		</div>
+		<>
+			<HeroSection />
+			<DetailSection />
+			<VisiMisi />
+			<Sertifikat />
+		</>
 	);
 }

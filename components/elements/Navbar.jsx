@@ -36,7 +36,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={navbarRef}
-			className="fixed w-full flex justify-between items-center py-2 lg:px-6 px-4 bg-[#1f1f1f]/70 backdrop-blur-lg border border-[#1f1f1f]/40 z-10 text-white drop-shadow-lg">
+			className="fixed w-full flex justify-between items-center py-2 lg:px-6 px-4 bg-[#1f1f1f]/70 backdrop-blur-lg border border-[#1f1f1f]/40 z-20 text-white drop-shadow-lg">
 			<Link href="/">
 				<div className={`${menuOpen ? 'hidden' : ''} flex items-center`}>
 					<span>
