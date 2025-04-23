@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DetailSection() {
 	return (
@@ -19,7 +20,7 @@ export default function DetailSection() {
 					variant="outline"
 					className="mb-4"
 					size="sm">
-					Selengkapnya
+					<Link href="/tentang-kami">Selengkapnya</Link>
 				</Button>
 				<div className="h-[0.5px] my-4 w-full bg-black" />
 				<div>
