@@ -36,7 +36,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={navbarRef}
-			className="fixed w-full flex justify-between items-center py-2 lg:px-6 px-4 bg-[#1f1f1f]/70 backdrop-blur-lg border border-[#1f1f1f]/40 z-20 text-white drop-shadow-lg">
+			className="fixed lg:h-16 w-full flex justify-between items-center py-2 lg:px-6 px-4 bg-[#1f1f1f]/70 backdrop-blur-lg border border-[#1f1f1f]/40 z-20 text-white drop-shadow-lg">
 			<Link href="/">
 				<div className={`${menuOpen ? 'hidden' : ''} flex items-center`}>
 					<span>
@@ -56,8 +56,8 @@ const Navbar = () => {
 				</button>
 			</div>
 			<div className={`lg:flex items-center ${menuOpen ? 'block' : 'hidden'} w-full lg:w-auto`}>
-				<ul className="flex text-black mix-blend-difference text-sm flex-col lg:flex-row justify-center items-center bg-[#fefefe] lg:bg-transparent">
-					<li>
+				<ul className="flex text-white mix-blend-difference text-sm flex-col lg:flex-row justify-center items-center bg-[#fefefe] lg:bg-transparent">
+					<li className="mx-4 my-2 lg:my-0 relative">
 						<Link href="/produk">
 							<span className="hover_button">Produk</span>
 						</Link>

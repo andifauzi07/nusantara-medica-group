@@ -22,20 +22,21 @@ export default function Testimoni() {
 		},
 	];
 	return (
-		<div className="bg-main text-white px-8 py-8">
+		<div className="bg-main md:h-96 md:relative md:bg-cover md:bg-center md:flex md:items-center md:justify-between md:px-16 text-white px-8 py-8">
+			<div className="md:absolute md:inset-0 md:bg-gradient-to-r md:from-[#29440f] md:to-[#65AA25]" />
 			{testi.map((item) => (
 				<div
 					key={item.id}
-					className="w-full px-4 flex gap-4 flex-col justify-center items-center">
+					className="w-full md:z-10 md:w-3xs px-4 flex gap-4 flex-col justify-center items-center">
 					<Image
 						src={item.image}
 						width={80}
 						height={80}
 						alt={item.title}
 					/>
-					<h3 className="text-xl">{item.title}</h3>
-					<div className="h-[0.5px] my-2 w-1/4 bg-white" />
-					<p className="text-xs text-center pb-4">{item.subTitle}</p>
+					<h3 className="text-xl md:text-2xl md:font-semibold">{item.title}</h3>
+					<div className="h-[0.5px] my-2 w-1/4 bg-[#FFB200]" />
+					<p className="text-xs md:text-base md:font-base text-center pb-4">{item.subTitle}</p>
 				</div>
 			))}
 		</div>
