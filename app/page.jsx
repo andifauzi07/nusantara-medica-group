@@ -14,7 +14,7 @@ export default function Home() {
 			<HeroSection />
 			<DetailSection />
 			<TestimoniCount />
-			<div className=" w-full flex justify-center items-center px-8 py-6">
+			<div className="w-full flex justify-center items-center px-8 py-6">
 				<div className="w-[490px]">
 					<p className="text-center text-base md:text-xl text-main font-semibold">Produk berkualitas</p>
 					<div className="w-full flex justify-center my-4">

@@ -32,12 +32,15 @@ export default function HeroSection() {
 					</Button>
 				</div>
 			</div>
-			<div className="hidden lg:block lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:z-10">
-				<div className="flex flex-col gap-4 justify-center items-center">
-					<TypingAnimation className="text-white text-4xl">Solusi Herbal Terpercaya Untuk Menjaga</TypingAnimation>
-					<TypingAnimation className="text-white font-semibold text-xl mb-10">Keseimbangan Tubuh Secara Alami</TypingAnimation>
-					<Button variant="transparent">
-						<Link href="/kontak">Hubungi Kami</Link>
+			<div className="hidden lg:w-full lg:justify-start px-10 lg:flex lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/4 lg:z-10">
+				<div className="flex flex-col w-1/2 gap-4 md:ml-16 items-start">
+					<TypingAnimation className="text-white text-left text-[46px]">Solusi Herbal Terpercaya Untuk Menjaga</TypingAnimation>
+					<TypingAnimation className="text-white font-semibold text-left w-full text-2xl mb-10">Keseimbangan Tubuh Secara Alami</TypingAnimation>
+					<Button
+						variant="transparent"
+						size="lg"
+						className="rounded-sm">
+						<Link href="/kontak">Jelajahi Kami</Link>
 					</Button>
 				</div>
 			</div>

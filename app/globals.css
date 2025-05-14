@@ -7,8 +7,13 @@
 	@apply before:absolute before:left-0 before:bottom-0 before:h-0.5 before:w-full before:origin-left before:scale-x-0 before:bg-white before:transition-transform before:duration-300 hover:before:scale-x-100;
 }
 
+/* body {
+	overflow-x: hidden;
+	box-sizing: border-box;
+} */
+
 .scroll-hidden {
-	overflow: auto; /* Tetap bisa digulir */
+	overflow-x: auto; /* Tetap bisa digulir */
 	scrollbar-width: none; /* Firefox */
 }
 
@@ -61,20 +66,20 @@
 	--radius-xl: calc(var(--radius) + 4px);
 	--animate-marquee: marquee var(--duration) infinite linear;
 	--animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
-  @keyframes marquee {
-  from {
-    transform: translateX(0);
+	@keyframes marquee {
+		from {
+			transform: translateX(0);
 		}
-  to {
-    transform: translateX(calc(-100% - var(--gap)));
+		to {
+			transform: translateX(calc(-100% - var(--gap)));
 		}
 	}
-  @keyframes marquee-vertical {
-  from {
-    transform: translateY(0);
+	@keyframes marquee-vertical {
+		from {
+			transform: translateY(0);
 		}
-  to {
-    transform: translateY(calc(-100% - var(--gap)));
+		to {
+			transform: translateY(calc(-100% - var(--gap)));
 		}
 	}
 }
