@@ -1,6 +1,6 @@
-'use client';
 import Image from 'next/image';
-import CountUp from 'react-countup';
+// import { NumberTicker } from '@/registry/magicui/number-ticker';
+import { NumberTicker } from '@/components/magicui/number-ticker';
 
 export default function TestimoniCount() {
 	return (
@@ -15,10 +15,14 @@ export default function TestimoniCount() {
 			<div className="flex justify-center items-center md:gap-8">
 				<div className="flex md:gap-4 w-full items-center justify-between">
 					<p className="md:text-[56px] relative md:gap-5 md:font-semibold md:flex md:items-center md:justify-center md:w-1/3">
-						<CountUp
+						{/* <CountUp
 							className="text-3xl font-bold md:text-[56px]"
 							end={35}
 							duration={5}
+						/> */}
+						<NumberTicker
+							value={35}
+							className="text-3xl text-white font-bold md:text-[56px]"
 						/>
 						<Image
 							src="/icon/plus.png"
@@ -39,10 +43,14 @@ export default function TestimoniCount() {
 					</p>
 					<div className="md:h-[65px] h-[32px] w-[1px] bg-[#FFB200]" />
 					<p className="md:text-[56px] md:gap-5 relative md:font-semibold md:flex md:items-center md:justify-center md:w-1/3">
-						<CountUp
+						{/* <CountUp
 							className="text-3xl font-bold md:text-[56px]"
 							end={29}
 							duration={5}
+						/> */}
+						<NumberTicker
+							value={29}
+							className="text-3xl text-white font-bold md:text-[56px]"
 						/>
 						<Image
 							src="/icon/lokasi.png"
@@ -63,10 +71,14 @@ export default function TestimoniCount() {
 					</p>
 					<div className="md:h-[65px] h-[32px] w-[1px] bg-[#FFB200]" />
 					<p className="md:text-[56px] md:gap-5 relative md:font-semibold md:flex md:items-center md:justify-center md:w-1/3">
-						<CountUp
+						{/* <CountUp
 							className="text-3xl font-bold md:text-[56px]"
 							end={3200}
 							// duration={5}
+						/> */}
+						<NumberTicker
+							value={3200}
+							className="text-3xl text-white font-bold md:text-[56px]"
 						/>
 						<Image
 							src="/icon/orang.png"
@@ -80,7 +92,7 @@ export default function TestimoniCount() {
 							width={24}
 							height={24}
 							alt="lokasi"
-							className="hidden md:block absolute top-4 left-49 text-3xl md:-mt-3 md:pr-1"
+							className="hidden md:block absolute top-4 left-51 text-3xl md:-mt-3 md:pr-1"
 						/>
 						<br className="md:hidden" />
 						<span className="md:text-base text-[10px] md:font-thin md:leading-none">Pelanggan Setia</span>

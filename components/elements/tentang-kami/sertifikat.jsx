@@ -5,8 +5,8 @@ export default function Sertifikat() {
 	return (
 		<>
 			<div className="px-8 py-4">
-				<h1 className="text-xl text-center text-main font-bold">Bersertifikat</h1>
-				<div className="grid grid-cols-2 my-4 place-items-center">
+				<h1 className="text-xl text-center md:text-4xl text-main font-bold">Bersertifikat</h1>
+				<div className="md:flex md:w-full md:gap-16 md:items-center md:my-16 md:justify-center grid grid-cols-2 my-4 place-items-center">
 					{image.map((img, index) => (
 						<Image
 							key={(index += img)}
@@ -20,11 +20,19 @@ export default function Sertifikat() {
 				</div>
 			</div>
 			<Image
-				className="w-full -mb-0.5"
+				className="md:hidden w-full -mb-0.5"
 				src="/image/rumput.png"
 				width={200}
 				height={100}
 				alt="rumput"
+			/>
+			<Image
+				className="hidden md:block w-full -mb-0.5"
+				src="/dekstop/bg-desktop.png"
+				width={512}
+				height={100}
+				quality={100}
+				alt="Nature"
 			/>
 		</>
 	);
