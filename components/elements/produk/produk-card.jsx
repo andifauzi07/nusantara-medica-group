@@ -1,75 +1,35 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { produkDetail } from '@/lib/constants';
 
 export default function ProdukCard() {
-	const productsImage1 = [
-		{ image: '/image/produk/benwaras.png', slug: '/produk/benwaras' },
-		{ image: '/image/produk/cardicure.png', slug: '/produk/cardicure' },
-		{ image: '/image/produk/forukol.png', slug: 'produk/forukol' },
-		{ image: '/image/produk/gabegah.png', slug: '/produk/gabegah' },
-	];
-	const productsImage2 = [
-		{ image: '/image/produk/jonafro.png', slug: '/produk/jon-afro' },
-		{ image: '/image/produk/kistovit.png', slug: '/produk/kystovit' },
-		{ image: '/image/produk/netraklin.png', slug: 'produk/netraklin' },
-		{ image: '/image/produk/rhemtik.png', slug: '/produk/rhemtik' },
-	];
-	const productsImage3 = [
-		{ image: '/image/produk/slimcare.png', slug: '/produk/slim-care' },
-		{ image: '/image/produk/velution.png', slug: '/produk/velution' },
-		{ image: '/image/produk/zada.png', slug: 'produk/zada' },
-		{ image: '/image/produk/zeflamona.png', slug: '/produk/zeflamona' },
-	];
-
 	return (
-		<div className="pl-4">
-			<div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
-				{productsImage1.map((produk, index) => (
+		<div className="bg-[#ebebeb] md:flex md:justify-center md:px-8 md:flex-col md:items-start md:py-16 md:gap-8">
+			<h1 className="md:text-main md:font-semibold md:text-4xl md:text-left md:pb-8">Unggulan</h1>
+			<div className="md:w-full md:flex md:items-center md:gap-6 scroll-hidden">
+				{produkDetail.map((item, index) => (
 					<div
-						key={index}
-						className="flex justify-center items-center mb-4 min-w-[200px] shrink-0">
-						<Link href={produk.slug}>
-							<Image
-								src={produk.image}
-								alt={`Produk ${index + 1}`}
-								width={200}
-								height={200}
-								className="rounded-lg shadow-lg"
-							/>
-						</Link>
-					</div>
-				))}
-			</div>
-			<div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
-				{productsImage2.map((produk, index) => (
-					<div
-						key={index}
-						className="flex justify-center items-center mb-4 min-w-[200px] shrink-0">
-						<Link href={produk.slug}>
-							<Image
-								src={produk.image}
-								alt={`Produk ${index + 1}`}
-								width={200}
-								height={200}
-								className="rounded-lg shadow-lg"
-							/>
-						</Link>
-					</div>
-				))}
-			</div>
-			<div className="flex overflow-x-auto space-x-4 pb-4 scrollbar-hide">
-				{productsImage3.map((produk, index) => (
-					<div
-						key={index}
-						className="flex justify-center items-center mb-4 min-w-[200px] shrink-0">
-						<Link href={produk.slug}>
-							<Image
-								src={produk.image}
-								alt={`Produk ${index + 1}`}
-								width={200}
-								height={200}
-								className="rounded-lg shadow-lg"
-							/>
+						key={item.slug}
+						className="w-60 bg-white justify-center items-start relative shrink-0 flex flex-col rounded-[8px] shadow-md h-fit p-2">
+						<Image
+							src={item.image}
+							alt={`Produk ${index + 1}`}
+							width={300}
+							height={300}
+							className="rounded-[8px]"
+						/>
+						<Image
+							src="/icon/stars.png"
+							width={20}
+							height={20}
+							alt="stars"
+							className="absolute top-4 left-4 object-contain md:h-5 md:w-5 h-4 w-4"
+						/>
+						<h1 className="pt-4 font-semibold text-main">{item.title}</h1>
+						<Link
+							href={`/produk/${item.slug}`}
+							className="hover:font-bold transition-all ease-in md:text-xs">
+							Selengkapnya
 						</Link>
 					</div>
 				))}

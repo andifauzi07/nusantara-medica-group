@@ -8,8 +8,8 @@ export default function Kontak() {
 			<HeroSection />
 			<KontakFormulir />
 			<Image
-				className="w-full -mb-0.5"
-				src="/image/rumput.png"
+				className="w-full relative md:-z-50 md:-mt-10 -mb-0.5"
+				src="/dekstop/bg-desktop.png"
 				width={200}
 				height={100}
 				alt="rumput"

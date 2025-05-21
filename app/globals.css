@@ -25,6 +25,10 @@
 	background: linear-gradient(to right, #29440f 0%, #65aa25 100%);
 }
 
+.gradasi-miring {
+	background: linear-gradient(to bottom left, #29440f 0%, #65aa25 100%);
+}
+
 @media (min-width: 768px) {
 	.gradasi-desktop {
 		background: linear-gradient(to right, #29440f 0%, #65aa25 100%);

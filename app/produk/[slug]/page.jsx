@@ -2,6 +2,7 @@ import { produkDetail } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export default async function Page({ params }) {
 	const id = (await params).slug;
@@ -17,13 +18,13 @@ export default async function Page({ params }) {
 	const sertifikat = ['/image/sertifikat/kementrian.png', '/image/sertifikat/halal.png', '/image/sertifikat/jamu.png', '/image/sertifikat/bpom.png', '/image/sertifikat/indonesia.png', '/image/sertifikat/natural.png'];
 	return (
 		<>
-			<div className="pt-8">
+			<div className="md:hidden pt-8">
 				<Image
 					src={details.image}
 					alt="Logo"
 					width={1024}
 					height={768}
-					className="object-cover z-0"
+					className="md:hidden block object-cover z-0"
 				/>
 				<div className="flex w-full px-8 justify-between py-6">
 					<h1 className="text-main text-xl font-bold">{details.title}</h1>
@@ -62,13 +63,64 @@ export default async function Page({ params }) {
 					))}
 				</div>
 			</div>
-			<Image
-				className="w-full -mb-0.5"
-				src="/image/rumput.png"
-				width={200}
-				height={100}
-				alt="rumput"
-			/>
+			<div className="hidden md:flex md:justify-center md:items-center md:w-full md:py-32 md:px-16">
+				<div className="w-full flex flex-col text-left justify-end">
+					<h1 className="text-4xl font-bold text-main py-8">{details.title}</h1>
+					<p className="pb-8">{details.deskripsi}</p>
+					<div className="flex gap-4 mb-8">
+						<a
+							href="https://wa.me/6285824571413"
+							target="_blank">
+							<Button className="rounded-md">
+								Beli Sekarang{' '}
+								<Image
+									src="/icon/arrow-right.svg"
+									width={18}
+									height={18}
+									alt="arrow"
+								/>
+							</Button>
+						</a>
+						<Image
+							src="/icon/keranjang.png"
+							width={24}
+							height={24}
+							alt="arrow"
+						/>
+					</div>
+					<div className="w-full h-[1px] bg-main" />
+				</div>
+				<div className="w-full flex items-center flex-col gap-y-8">
+					<div className="flex gap-2 px-8 justify-center items-center">
+						{sertifikat.map((img, index) => (
+							<Image
+								key={(index += img)}
+								src={img}
+								alt="sertifikat"
+								width={50}
+								height={50}
+								className="object-contain"
+							/>
+						))}
+					</div>
+					<Image
+						src={details.image}
+						alt="Logo"
+						width={350}
+						height={300}
+						className="block object-cover z-0 rounded-lg"
+					/>
+				</div>
+			</div>
+			<div className="hidden md:block w-2/3 my-8 px-16 pb-8">
+				<h3 className="text-4xl font-bold text-main pb-6">Manfaat & Kandungan</h3>
+				{details.manfaat.map((item, index) => (
+					<div key={index}>
+						<p className="font-semibold text-xl pb-4">{item.subTitle}</p>
+						<p className="whitespace-pre-line pb-4 text-lg">{item.deskripsi}</p>
+					</div>
+				))}
+			</div>
 		</>
 	);
 }
