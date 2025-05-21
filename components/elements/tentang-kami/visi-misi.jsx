@@ -1,6 +1,7 @@
 export default function VisiMisi() {
 	return (
-		<div className="bg-main md:bg-white md:flex md:gap-x-10 md:justify-center md:px-8 md:text-black text-white py-4">
+		<div className="bg-main rounded-tl-4xl md:rounded-none md:bg-white md:flex md:gap-x-10 md:justify-center md:px-8 md:text-black text-white py-4 relative">
+			<div className="md:hidden w-[152px] rounded-tl-4xl absolute -top-1.5 right-0 h-3.5 bg-[#FFB200]" />
 			<div className="md:w-1/3 px-8 py-4">
 				<h1 className="md:text-4xl md:text-main text-center text-2xl font-bold pb-4">- VISI -</h1>
 				<p className="text-center justify-center md:font-base font-extralight md:text-base text-sm">

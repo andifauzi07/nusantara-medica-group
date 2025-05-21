@@ -19,14 +19,14 @@ export default function Sertifikat() {
 					))}
 				</div>
 			</div>
-			{/* <Image
-				className="hidden md:block w-full -mb-0.5"
-				src="/dekstop/bg-desktop-2.jpeg"
+			<Image
+				className="block md:hidden w-full -mb-0.5"
+				src="/dekstop/bg-desktop.png"
 				width={200}
 				height={100}
 				quality={100}
 				alt="Nature"
-			/> */}
+			/>
 		</>
 	);
 }
