@@ -2,7 +2,6 @@ import { produkDetail } from '@/lib/constants';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
 
 export default async function Page({ params }) {
 	const id = (await params).slug;
@@ -26,11 +25,20 @@ export default async function Page({ params }) {
 					height={768}
 					className="md:hidden block object-cover z-0"
 				/>
-				<div className="flex w-full px-8 justify-between py-6">
-					<h1 className="text-main text-xl font-bold">{details.title}</h1>
+				<div className="flex w-full px-8 justify-between items-center py-6">
+					<div className="flex gap-4 items-center">
+						<h1 className="text-main text-xl font-bold">{details.title}</h1>
+						<Image
+							src="/icon/stars.png"
+							width={20}
+							height={20}
+							alt="stars"
+							className="object-contain md:h-5 md:w-5 h-8 w-8"
+						/>
+					</div>
 					<Button
 						variant="default"
-						className="text-xs"
+						className="text-xs gradasi rounded-md"
 						size="sm">
 						Beli Sekarang
 					</Button>
@@ -38,7 +46,7 @@ export default async function Page({ params }) {
 				<div className="px-8 py-6">
 					<p className="whitespace-pre-line font-medium">{details.deskripsi}</p>
 				</div>
-				<div className="flex gap-2 px-8 justify-center items-center">
+				<div className="flex gap-2 pb-4 px-8 justify-center items-center">
 					{sertifikat.map((img, index) => (
 						<Image
 							key={(index += img)}
@@ -50,13 +58,14 @@ export default async function Page({ params }) {
 						/>
 					))}
 				</div>
-				<div className="px-6 py-8">
-					<div className="h-0.5 w-full bg-main flex justify-center" />
-				</div>
-				<div className="px-8">
-					<h3 className="text-xl font-bold text-main pb-6">Manfaat & Kandungan</h3>
+				<div className="gradasi">
+					<div className="bg-white flex items-center w-fit px-6 h-[48px] rounded-br-4xl">
+						<h3 className="text-xl font-bold text-main">Manfaat & Kandungan</h3>
+					</div>
 					{details.manfaat.map((item, index) => (
-						<div key={index}>
+						<div
+							key={index}
+							className="px-6 text-white py-5">
 							<p className="font-semibold text-base pb-4">{item.subTitle}</p>
 							<p className="whitespace-pre-line pb-4 text-sm">{item.deskripsi}</p>
 						</div>

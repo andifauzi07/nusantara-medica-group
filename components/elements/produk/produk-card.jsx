@@ -4,7 +4,7 @@ import { produkDetail } from '@/lib/constants';
 
 export default function ProdukCard() {
 	return (
-		<div className="md:bg-[#ebebeb] bg-white md:flex md:justify-center md:px-8 md:flex-col md:items-start md:py-16 md:gap-8 pb-10 md:pb-0">
+		<div className="md:bg-[#ebebeb] bg-white md:flex md:justify-center md:px-8 md:flex-col md:items-start md:py-16 md:gap-8 pb-10">
 			<h1 className="hidden md:block md:text-main md:font-semibold md:text-4xl md:text-left md:pb-8">Unggulan</h1>
 			<div className="md:w-full md:h-fit h-40 flex px-4 md:px-0 gap-4 md:items-center md:gap-6 scroll-hidden">
 				{produkDetail.map((item, index) => (
