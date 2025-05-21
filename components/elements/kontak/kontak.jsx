@@ -55,7 +55,8 @@ const KontakFormulir = () => {
 		<div className="md:flex md:justify-center">
 			<div className="md:w-1/2 md:z-10 py-6 px-8">
 				<div className="flex items-center justify-center">
-					<div className="w-full max-w-md p-6 border-solid border-2 border-[#D9D9D9]  bg-white rounded-lg shadow-lg">
+					<div className="w-full max-w-md p-6 border-solid border-2 md:border-[#D9D9D9] border-main bg-white rounded-lg shadow-lg relative">
+						<div className="md:hidden w-[152px] rounded-tl-4xl absolute -top-1.5 -right-0.5 h-3.5 bg-[#FFB200]" />
 						<form
 							onSubmit={handleSubmit}
 							className="space-y-4">
@@ -109,7 +110,7 @@ const KontakFormulir = () => {
 							<div className="pt-4">
 								<button
 									type="submit"
-									className="w-full px-4 py-2 text-white bg-[#2C2C2C] rounded-md hover:bg-[#868686]">
+									className="w-full px-4 py-2 text-white gradasi md:bg-[#2C2C2C] rounded-md hover:bg-[#868686]">
 									Kirim
 								</button>
 							</div>
@@ -117,7 +118,7 @@ const KontakFormulir = () => {
 					</div>
 				</div>
 			</div>
-			<div className="md:w-1/2 md:flex md:flex-col md:gap-y-8 md:z-10 py-6 px-8">
+			<div className="hidden md:w-1/2 md:flex md:flex-col md:gap-y-8 md:z-10 py-6 px-8">
 				<div className="md:flex md:items-center md:gap-10">
 					<Image
 						src="/image/icon/alamat.svg"
