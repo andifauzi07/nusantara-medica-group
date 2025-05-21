@@ -5,13 +5,16 @@ import { Button } from '@/components/ui/button';
 
 export default function ProdukSection() {
 	return (
-		<div className="gradasi-miring md:flex md:justify-center md:px-8 md:flex-col md:items-start md:py-16 md:gap-8">
-			<h1 className="md:text-white md:font-semibold md:text-4xl md:text-left md:pb-8">Beberapa Produk Terlaris Lainnya</h1>
-			<div className="md:w-full grid-cols-4 md:grid md:place-items-center md:gap-6">
+		<div className="gradasi md:flex rounded-tl-4xl md:rounded-none md:justify-center md:px-8 md:flex-col md:items-start md:py-16 py-8 px-4 md:gap-8 relative">
+			<div className="md:hidden w-[152px] rounded-tl-4xl absolute -top-1.5 right-0 h-3.5 bg-[#FFB200]" />
+			<h1 className="text-base pb-4 pl-4 text-white font-semibold md:text-4xl md:text-left md:pb-8">
+				Beberapa Produk <span className="text-secondary md:text-white">Terlaris </span>Lainnya
+			</h1>
+			<div className="md:w-full grid-cols-2 gap-y-8 md:grid-cols-4 grid place-items-center md:gap-6">
 				{produkDetail.map((item, index) => (
 					<div
 						key={item.slug}
-						className="w-60 bg-white justify-center items-start relative flex flex-col rounded-[8px] shadow-md h-fit p-2">
+						className="md:w-60 w-32 bg-white justify-center items-start relative flex flex-col rounded-[8px] shadow-md h-fit p-2">
 						<Image
 							src={item.image}
 							alt={`Produk ${index + 1}`}
@@ -26,16 +29,16 @@ export default function ProdukSection() {
 							alt="stars"
 							className="absolute top-4 left-4 object-contain md:h-5 md:w-5 h-4 w-4"
 						/>
-						<h1 className="pt-4 font-semibold text-main">{item.title}</h1>
+						<h1 className="pt-4 font-semibold text-main text-sm md:text-lg">{item.title}</h1>
 						<Link
 							href={`/produk/${item.slug}`}
-							className="hover:font-bold transition-all ease-in md:text-xs">
+							className="hover:font-bold transition-all ease-in md:text-xs text-[8px]">
 							Selengkapnya
 						</Link>
 					</div>
 				))}
 			</div>
-			<div className="w-full flex justify-center">
+			<div className="hidden w-full md:flex justify-center">
 				<a
 					href="https://wa.me/6285824571413"
 					target="_blank">
@@ -47,6 +50,25 @@ export default function ProdukSection() {
 							src="/icon/Arrow.svg"
 							width={20}
 							height={20}
+							alt="Button"
+							className="w-4 h-4 lg:w-[20px] lg:h-[20px]"
+						/>
+					</Button>
+				</a>
+			</div>
+			<div className="flex w-full pt-4 md:hidden justify-center">
+				<a
+					href="https://wa.me/6285824571413"
+					target="_blank">
+					<Button
+						variant="outline"
+						size="sm"
+						className="rounded-md h-6 text-xs border-none">
+						Konsultasikan
+						<Image
+							src="/icon/Arrow.svg"
+							width={16}
+							height={16}
 							alt="Button"
 							className="w-4 h-4 lg:w-[20px] lg:h-[20px]"
 						/>

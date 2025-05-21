@@ -9,13 +9,6 @@ export default function Produk() {
 			<HeroSection />
 			<ProdukCard />
 			<ProdukSection />
-			<Image
-				className="md:hidden w-full -mb-0.5"
-				src="/image/rumput.png"
-				width={200}
-				height={100}
-				alt="rumput"
-			/>
 		</>
 	);
 }

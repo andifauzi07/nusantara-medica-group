@@ -36,7 +36,7 @@ const Navbar = () => {
 	return (
 		<nav
 			ref={navbarRef}
-			className="fixed lg:h-16 w-full flex justify-between items-center py-2 lg:px-6 px-4 bg-[#1f1f1f]/70 backdrop-blur-lg border border-[#1f1f1f]/40 z-20 text-white drop-shadow-lg">
+			className="fixed md:top-0 md:left-0 md:-translate-0 md:rounded-none top-6 left-1/2 -translate-x-1/2 lg:h-16 w-[350px] md:w-full flex justify-between rounded-xl items-center py-2 lg:px-6 px-4 gradasi z-20 text-white drop-shadow-lg">
 			<Link href="/">
 				<div className={`${menuOpen ? 'hidden' : ''} flex items-center`}>
 					<span>
@@ -49,14 +49,14 @@ const Navbar = () => {
 				onClick={() => setMenuOpen(!menuOpen)}>
 				<button aria-label="Toggle Menu">
 					<div className="space-y-1">
-						<span className="block w-6 h-0.5 bg-white mix-blend-difference"></span>
-						<span className="block w-6 h-0.5 bg-white mix-blend-difference"></span>
-						<span className="block w-6 h-0.5 bg-white mix-blend-difference"></span>
+						<span className="block w-6 h-0.5 bg-white"></span>
+						<span className="block w-6 h-0.5 bg-white"></span>
+						<span className="block w-6 h-0.5 bg-white"></span>
 					</div>
 				</button>
 			</div>
 			<div className={`lg:flex items-center ${menuOpen ? 'block' : 'hidden'} w-full lg:w-auto`}>
-				<ul className="flex text-white mix-blend-difference text-sm flex-col lg:flex-row justify-center items-center bg-[#fefefe] lg:bg-transparent">
+				<ul className="flex text-white text-sm flex-col lg:flex-row justify-center items-center  lg:bg-transparent">
 					<li className="mx-4 my-2 lg:my-0 relative">
 						<Link href="/produk">
 							<span className="hover_button">Produk</span>
