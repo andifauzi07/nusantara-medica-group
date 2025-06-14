@@ -14,7 +14,7 @@ export default function Produk() {
 					<Link
 						href={produk.href}
 						key={produk.id}>
-						<div className="flex md:flex-none bg-white md:p-3 md:rounded-2xl rounded-xl md:justify-center md:w-[100%] md:gap-4 mt-4 items-center">
+						<div className="flex md:block bg-white md:p-3 md:rounded-2xl rounded-xl md:justify-center md:w-[100%] md:gap-4 mt-4 items-center">
 							<Image
 								src={produk.image}
 								width={200}
