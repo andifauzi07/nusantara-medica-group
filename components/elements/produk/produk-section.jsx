@@ -22,13 +22,15 @@ export default function ProdukSection() {
 							height={300}
 							className="rounded-[8px]"
 						/>
-						<Image
-							src="/icon/stars.png"
-							width={20}
-							height={20}
-							alt="stars"
-							className="absolute top-4 left-4 object-contain md:h-5 md:w-5 h-4 w-4"
-						/>
+						{item.unggulan && (
+							<Image
+								src="/icon/stars.png"
+								width={20}
+								height={20}
+								alt="stars"
+								className="absolute top-4 left-4 object-contain md:h-5 md:w-5 h-4 w-4"
+							/>
+						)}
 						<h1 className="pt-4 font-semibold text-main text-sm md:text-lg">{item.title}</h1>
 						<Link
 							href={`/produk/${item.slug}`}
@@ -40,7 +42,7 @@ export default function ProdukSection() {
 			</div>
 			<div className="hidden w-full md:flex justify-center">
 				<a
-					href="https://wa.me/6285824571413"
+					href="https://wa.me/6282395209997"
 					target="_blank">
 					<Button
 						variant="outline"

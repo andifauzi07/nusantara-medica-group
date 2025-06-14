@@ -40,7 +40,11 @@ export default async function Page({ params }) {
 						variant="default"
 						className="text-xs gradasi rounded-md"
 						size="sm">
-						Beli Sekarang
+						<a
+							href="https://wa.me/6282395209997"
+							target="_blank">
+							Beli Sekarang
+						</a>
 					</Button>
 				</div>
 				<div className="px-8 py-6">
@@ -78,7 +82,7 @@ export default async function Page({ params }) {
 					<p className="pb-8">{details.deskripsi}</p>
 					<div className="flex gap-4 mb-8">
 						<a
-							href="https://wa.me/6285824571413"
+							href="https://wa.me/6282395209997"
 							target="_blank">
 							<Button className="rounded-md">
 								Beli Sekarang{' '}

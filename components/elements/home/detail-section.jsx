@@ -7,7 +7,7 @@ export default function DetailSection() {
 		<>
 			<div className="md:hidden w-full px-8 py-6">
 				<h1 className="text-2xl font-bold text-main pb-4">Kenali Kebersamaan Kami</h1>
-				<h3 className="pb-4 font-bold text-xl">NMA Medika Herbal</h3>
+				<h3 className="pb-4 font-bold text-xl">NMA Herbal Medika</h3>
 				<p className="text-justify text-sm pb-4">
 					adalah brand kesehatan berbasis herbal yang berkomitmen menghadirkan produk alami berkualitas tinggi. Dengan memadukan kearifan tradisional dan inovasi modern, kami meracik berbagai solusi herbal yang aman, efektif, dan tanpa efek
 					samping.
@@ -35,7 +35,7 @@ export default function DetailSection() {
 					<h1 className="text-main text-4xl font-bold">
 						<span className="text-[#FFB200]">Kenali</span> Kebersamaan Kami
 					</h1>
-					<p className="font-bold text-[#757575] text-2xl">NMA Medika Herbal</p>
+					<p className="font-bold text-[#757575] text-2xl">NMA Herbal Medika</p>
 					<p className="leading-8 text-justify">
 						Adalah brand kesehatan berbasis herbal yang berkomitmen menghadirkan produk alami berkualitas tinggi. Dengan memadukan kearifan tradisional dan inovasi modern, kami meracik berbagai solusi herbal yang aman, efektif, dan tanpa
 						efek samping.

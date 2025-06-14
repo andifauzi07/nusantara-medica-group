@@ -4,7 +4,7 @@ import { NumberTicker } from '@/components/magicui/number-ticker';
 
 export default function TestimoniCount() {
 	return (
-		<div className="bg-main w-full rounded-tl-4xl md:rounded-none md:bg-center text-white px-4 md:px-8 py-4 md:py-8 md:bg-gradient-to-r md:from-[#29440f] md:to-[#65AA25] relative">
+		<div className="bg-main w-full rounded-tl-4xl md:rounded-none md:bg-center text-white px-4 md:px-8 py-4 md:py-8 bg-gradient-to-r from-[#29440f] to-[#65AA25] relative">
 			<div className="md:hidden w-[152px] rounded-tl-4xl absolute -top-1.5 right-0 h-3.5 bg-[#FFB200]" />
 			<div>
 				<h3 className="md:text-3xl md:font-semibold pb-2 md:pb-0 text-lg text-left md:text-center font-semibold">

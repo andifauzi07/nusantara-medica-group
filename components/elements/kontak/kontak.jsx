@@ -135,7 +135,7 @@ const KontakFormulir = () => {
 						height={40}
 						alt="Alamat"
 					/>
-					<h3>+6281244445575</h3>
+					<h3>+6282395209997</h3>
 				</div>
 				<div className="md:flex md:items-center md:gap-10">
 					<Image
@@ -144,7 +144,7 @@ const KontakFormulir = () => {
 						height={40}
 						alt="Alamat"
 					/>
-					<h3>nmamedikaherbal@gmail.com</h3>
+					<h3>nmaherbalmedika@gmail.com</h3>
 				</div>
 			</div>
 		</div>

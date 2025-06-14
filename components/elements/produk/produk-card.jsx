@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { produkDetail } from '@/lib/constants';
+import { produkCard } from '@/lib/constants';
 
 export default function ProdukCard() {
 	return (
 		<div className="md:bg-[#ebebeb] bg-white md:flex md:justify-center md:px-8 md:flex-col md:items-start md:py-16 md:gap-8 pb-10">
 			<h1 className="hidden md:block md:text-main md:font-semibold md:text-4xl md:text-left md:pb-8">Unggulan</h1>
 			<div className="md:w-full md:h-fit h-40 flex px-4 md:px-0 gap-4 md:items-center md:gap-6 scroll-hidden">
-				{produkDetail.map((item, index) => (
+				{produkCard.map((item, index) => (
 					<div
-						key={item.slug}
+						key={item.id}
 						className="md:w-60 w-32 bg-white justify-center items-start relative shrink-0 flex flex-col rounded-[8px] shadow-md h-fit p-2">
 						<Image
 							src={item.image}

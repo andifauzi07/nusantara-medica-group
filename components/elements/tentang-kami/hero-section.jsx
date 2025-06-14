@@ -13,7 +13,7 @@ export default function HeroSection() {
 				className="md:hidden object-cover z-0"
 			/>
 			<div className="block md:flex md:w-2/3 md:flex-col md:gap-8 md:justify-center md:px-8 md:text-left md:h-screen md:items-center">
-				<h1 className="md:text-4xl pb-4 md:pb-0 text-xl px-8 md:px-0 font-bold text-[#29440F]">Perjalanan NMA Medika Bersama Indonesia.</h1>
+				<h1 className="md:text-4xl pb-4 md:pb-0 text-xl px-8 md:px-0 font-bold text-[#29440F]">Perjalanan NMA Herbal Medika Bersama Indonesia.</h1>
 				<div className="md:flex w-full md:gap-4 md:items-center md:justify-center">
 					<div className="flex gap-x-4 items-center md:items-start md:gap-x-0 md:flex-col flex-row w-full relative">
 						<div>
