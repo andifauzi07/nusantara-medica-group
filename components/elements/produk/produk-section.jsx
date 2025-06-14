@@ -60,7 +60,7 @@ export default function ProdukSection() {
 			</div>
 			<div className="flex w-full pt-4 md:hidden justify-center">
 				<a
-					href="https://wa.me/6285824571413"
+					href="https://wa.me/6282395209997"
 					target="_blank">
 					<Button
 						variant="outline"
