@@ -10,7 +10,7 @@ import { ClientTestimoni } from '@/components/elements/home/client-testimoni';
 
 export default function Home() {
 	return (
-		<>
+		<div className="w-full">
 			<HeroSection />
 			<DetailSection />
 			<TestimoniCount />
@@ -35,6 +35,6 @@ export default function Home() {
 			<Testimoni />
 			<Produk />
 			<ClientTestimoni />
-		</>
+		</div>
 	);
 }
