@@ -22,7 +22,7 @@ export default function Testimoni() {
 		},
 	];
 	return (
-		<div className="bg-main md:h-96 md:relative md:bg-cover md:bg-center md:flex md:items-center md:justify-between md:px-16 text-white px-8 py-8">
+		<div className="gradasi md:h-96 md:relative md:bg-cover md:bg-center md:flex md:items-center md:justify-between md:px-16 text-white px-8 py-8">
 			<div className="md:absolute md:inset-0 md:bg-gradient-to-r md:from-[#29440f] md:to-[#65AA25]" />
 			{testi.map((item) => (
 				<div
