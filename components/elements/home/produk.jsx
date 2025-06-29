@@ -37,13 +37,17 @@ export default function Produk() {
 								<Button
 									variant="outline"
 									className="hidden md:block rounded-md md:h-9 md:text-xs h-5 text-[10px]">
-									<Link href={produk.href}>Selengkapnya</Link>
+									<div
+									//  href={produk.href}
+									>
+										Selengkapnya
+									</div>
 								</Button>
-								<Link
-									href={produk.href}
+								<div
+									// href={produk.href}
 									className="md:hidden rounded-md hover:font-bold font-semibold transition-all ease-in h-5 text-[10px]">
 									Selengkapnya
-								</Link>
+								</div>
 							</div>
 						</div>
 					</Link>
