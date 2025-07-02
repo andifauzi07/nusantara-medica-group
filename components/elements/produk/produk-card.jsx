@@ -27,7 +27,7 @@ export default function ProdukCard() {
 						/>
 						<h1 className="pt-4 text-sm md:text-lg font-semibold text-main">{item.title}</h1>
 						<Link
-							href={`/produk/${item.slug}`}
+							href={`${item.href}`}
 							className="hover:font-bold transition-all ease-in text-[8px] md:text-xs">
 							Selengkapnya
 						</Link>
